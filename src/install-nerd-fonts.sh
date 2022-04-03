@@ -24,6 +24,9 @@ done
 # echo "DELETING WINDOWS FONT FILES "
 rm *Windows*
 
+# echo "DELETING MACOS FONT FILES "
+rm *Retina*
+
 echo "MOVING FONTS TO USER FONTS FOLDER "
 mkdir ~/.local/share/fonts
 mv *otf  ~/.local/share/fonts
