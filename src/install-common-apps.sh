@@ -1,3 +1,3 @@
 #!/bin/bash     
 
-sudo apt install -y git neovim htop figlet lolcat neofetch
+sudo dnf install -y git neovim htop figlet lolcat neofetch
