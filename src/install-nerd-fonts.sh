@@ -2,8 +2,10 @@
 # fonts=("3270.zip" "Agave.zip" "AnonymousPro.zip" "Arimo.zip" "AurulentSansMono.zip" "BigBlueTerminal.zip" "BitstreamVeraSansMono.zip" "CascadiaCode.zip" "CodeNewRoman.zip" "Cousine.zip" "DaddyTimeMono.zip" "DejaVuSansMono.zip" "DroidSansMono.zip" "FantasqueSansMono.zip" "FiraCode.zip" "FiraMono.zip" "Go-Mono.zip" "Hack.zip" "Hasklig.zip" "HeavyData.zip" "Hermit.zip" "iA-Writer.zip" "IBMPlexMono.zip" "Inconsolata.zip" "InconsolataGo.zip" "InconsolataLGC.zip" "Iosevka.zip" "JetBrainsMono.zip" "Lekton.zip" "LiberationMono.zip" "Meslo.zip" "Monofur.zip" "Monoid.zip" "Mononoki.zip" "MPlus.zip" "Noto.zip" "OpenDyslexic.zip" "Overpass.zip" "ProFont.zip" "ProggyClean.zip" "RobotoMono.zip" "ShareTechMono.zip" "SourceCodePro.zip" "SpaceMono.zip" "Terminus.zip" "Tinos.zip" "Ubuntu.zip" "UbuntuMono.zip" "VictorMono.zip")
 
 FONTS=("FiraCode.zip" "Hack.zip" "InconsolataLGC.zip" "JetBrainsMono.zip" "Meslo.zip" "SourceCodePro.zip" "CascadiaCode.zip")
-RESPONSE=$(curl https://github.com/ryanoasis/nerd-fonts/releases/latest)
-VERSION=${RESPONSE:88:6}
+RESPONSE=$(curl -i https://github.com/ryanoasis/nerd-fonts/releases/latest)
+OFFSET=314
+LENGTH=6
+VERSION=${RESPONSE:OFFSET:LENGTH}
 DOWNLOAD_URL=https://github.com/ryanoasis/nerd-fonts/releases/download/${VERSION}/
 TEMP_FONTS_FOLDER=temp_fonts
 FONTS_FOLDER_FEDORA=~/.fonts
