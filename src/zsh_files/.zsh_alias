@@ -1,14 +1,15 @@
+# GENERIC
 alias p10kc="p10k configure"
 alias cls="clear"
 alias cat="bat"
-alias ps="proc"
+alias ps="procs"
 
 # EXA
 alias ls="exa"
 alias lsx="exa --long --header --all --group-directories-first --icons --git --changed --created --accessed --modified --time-style=iso"
 alias ls="exa --group-directories-first --all"
 
-#DNF
+# DNF
 alias dnf="sudo dnf"
 alias dnfi="sudo dnf install"
 alias dnfr="sudo dnf remove"

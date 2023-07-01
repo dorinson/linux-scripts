@@ -1,0 +1,1 @@
+cp xfce4-terminal-settings/* /home/$USERNAME/.config/xfce4/terminal/

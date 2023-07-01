@@ -1,1 +1,0 @@
-cp xfce4-terminal-settings/* /home/german/.config/xfce4/terminal/
