@@ -4,10 +4,10 @@ alias cls="clear"
 alias cat="bat"
 alias ps="procs"
 
-# EXA
-alias ls="exa"
-alias lsx="exa --long --header --all --group-directories-first --icons --git --changed --created --accessed --modified --time-style=iso"
-alias ls="exa --group-directories-first --all"
+# EZA
+alias ls="eza"
+alias lsx="eza --long --header --all --group-directories-first --icons --git --changed --created --accessed --modified --time-style=iso"
+alias lsa="eza --group-directories-first --all"
 
 # DNF
 alias dnf="sudo dnf"
@@ -16,3 +16,7 @@ alias dnfr="sudo dnf remove"
 alias dnfar="sudo dnf autoremove"
 alias dnfud="sudo dnf update"
 alias dnfug="sudo dnf upgrade"
+
+# XAMPP
+alias xampp_start="sudo /opt/lampp/lampp start"
+alias xampp_stop="sudo /opt/lampp/lampp stop"
